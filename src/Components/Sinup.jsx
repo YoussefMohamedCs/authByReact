@@ -72,6 +72,6 @@ const data =await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signup
 <p>if you have an account <Link to={'/signin'}>sign in</Link></p>
 
 </form>
-    </div
+    </div>
   )
 }
