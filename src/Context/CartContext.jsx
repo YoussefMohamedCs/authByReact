@@ -8,11 +8,11 @@ export default function CartContextProvider({children}){
     }
 const [cart , setCart] = useState([])
     const getCartItems = async ()=>{
-        let data =await axios.get("https://ecommerce.routemisr.com/api/v1/cart" ,
+        const data =await axios.get("https://ecommerce.routemisr.com/api/v1/cart" ,
              {headers}
             )
-            console.log(data.data.data.products)
-            setCart(data.data.data.products)
+            console.log(data?.data?.data?.products)
+            setCart(data?.data?.data?.products)
     }
     
 const addToProduct = async (productId)=>{

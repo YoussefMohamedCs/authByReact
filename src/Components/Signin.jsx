@@ -43,6 +43,7 @@ if(window.location.pathname == "/signin"){
 <button className='btn btn-info mt-3' >LOGIN</button>
 
 <p>if you do not have any accoutn <Link to={"/signup"}>Sign Up</Link></p>
+<p>if you forget the password  <Link to={"/fogetPassword"}>Forget password</Link></p>
     </form>
     </div>
   )
