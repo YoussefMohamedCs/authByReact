@@ -13,6 +13,7 @@ import UserContextProvider from './Context/UserName';
 import ForgetPassword from './Components/ForgetPassword';
 import ResetPassword from './Components/ResetPassword';
 import EnterNewPassword from './Components/EnterNewPassword';
+import QuizPage from './Components/QuizPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,7 +23,8 @@ function App() {
     {path:"cart" , element: <AllSec><Cart /></AllSec>} ,
     {path:"fogetPassword" , element:<AuthSec><ForgetPassword /></AuthSec>} ,
     {path:"ResetPassword" , element:<AuthSec><ResetPassword /></AuthSec>} ,
-    {path:"enterNewPassword" , element:<AuthSec><EnterNewPassword /></AuthSec>}
+    {path:"enterNewPassword" , element:<AuthSec><EnterNewPassword /></AuthSec>}, 
+     {path:"Quiz" , element:<QuizPage />}
   ])
 
   return (
